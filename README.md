@@ -1,2 +1,2 @@
 # DragRecyclerView
-可拖拽的recyclerView
+可拖拽的recyclerView，图片背景随着位置变化而变化，item和其他控件联动
