@@ -20,8 +20,8 @@ import java.util.List;
 
 public class DragActivity extends AppCompatActivity {
     private RecyclerView rv;
-    List<ToolModel> toolModels;
-    ToolsAdapter toolsAdapter;
+    List<ImageModel> toolModels;
+    ImageAdapter toolsAdapter;
     private ImageView imageView;
     private List<Integer> lastPos;
     private int[] resIds = {R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d};
@@ -108,17 +108,17 @@ public class DragActivity extends AppCompatActivity {
         int resIDd = R.drawable.report;
 
         toolModels = new ArrayList<>();
-        ToolModel toolModel = new ToolModel(resIDd);
-        ToolModel toolModel2 = new ToolModel(resIDd);
-        ToolModel toolModel3 = new ToolModel(resIDd);
-        ToolModel toolModel4 = new ToolModel(resIDd);
-        ToolModel toolModel5 = new ToolModel(resIDd);
+        ImageModel toolModel = new ImageModel(resIDd);
+        ImageModel toolModel2 = new ImageModel(resIDd);
+        ImageModel toolModel3 = new ImageModel(resIDd);
+        ImageModel toolModel4 = new ImageModel(resIDd);
+        ImageModel toolModel5 = new ImageModel(resIDd);
         toolModels.add(toolModel);
         toolModels.add(toolModel2);
         toolModels.add(toolModel3);
         toolModels.add(toolModel4);
         toolModels.add(toolModel5);
-        toolsAdapter = new ToolsAdapter(toolModels,resIds);
+        toolsAdapter = new ImageAdapter(toolModels,resIds);
         ItemDragAndSwipeCallback itemDragAndSwipeCallback = new ItemDragAndSwipeCallback(toolsAdapter);
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(itemDragAndSwipeCallback);
         itemTouchHelper.attachToRecyclerView(rv);

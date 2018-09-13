@@ -2,11 +2,11 @@ package study.cxm.com.sousuolist;
 
 
 
-public class ToolModel {
+public class ImageModel {
     private int resid;
 
 
-    public ToolModel(int resid) {
+    public ImageModel(int resid) {
         this.resid = resid;
 
     }

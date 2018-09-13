@@ -13,12 +13,12 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import java.util.List;
 
 
-public class ToolsAdapter extends BaseItemDraggableAdapter<ToolModel, BaseViewHolder> {
-    private List<ToolModel> toolModels;
+public class ImageAdapter extends BaseItemDraggableAdapter<ImageModel, BaseViewHolder> {
+    private List<ImageModel> toolModels;
     private Boolean isShow = false;
     private int[] resIds;
-    public ToolsAdapter(@Nullable List<ToolModel> toolModels,int[] resIds) {
-        super(R.layout.item_tools,toolModels);
+    public ImageAdapter(@Nullable List<ImageModel> toolModels, int[] resIds) {
+        super(R.layout.item_image,toolModels);
         this.toolModels = toolModels;
         this.resIds = resIds;
     }
@@ -39,7 +39,7 @@ public class ToolsAdapter extends BaseItemDraggableAdapter<ToolModel, BaseViewHo
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
-    protected void convert(BaseViewHolder helper, ToolModel toolModel) {
+    protected void convert(BaseViewHolder helper, ImageModel toolModel) {
 //        helper.setImageResource(R.id.iv_tool, toolModel.getResid());
         ImageView iv = helper.getView(R.id.iv_tool);
 
