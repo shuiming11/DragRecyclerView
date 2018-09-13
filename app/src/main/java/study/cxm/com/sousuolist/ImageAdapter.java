@@ -15,7 +15,6 @@ import java.util.List;
 
 public class ImageAdapter extends BaseItemDraggableAdapter<ImageModel, BaseViewHolder> {
     private List<ImageModel> toolModels;
-    private Boolean isShow = false;
     private int[] resIds;
     public ImageAdapter(@Nullable List<ImageModel> toolModels, int[] resIds) {
         super(R.layout.item_image,toolModels);
@@ -23,13 +22,7 @@ public class ImageAdapter extends BaseItemDraggableAdapter<ImageModel, BaseViewH
         this.resIds = resIds;
     }
 
-    public Boolean getShow() {
-        return isShow;
-    }
 
-    public void setShow(Boolean show) {
-        isShow = show;
-    }
 
     @Nullable
     @Override
